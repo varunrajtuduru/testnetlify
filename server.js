@@ -12,7 +12,7 @@ server.listen(3000, () => {
 
 app.get('/get', (req, res)=>{
   console.log("hello world")
-  res.send('hello world')
+  res.statusCode(200).send('hello world')
 })
 
 io.on('connection', (socket) => {
