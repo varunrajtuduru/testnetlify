@@ -4,3 +4,8 @@
 [functions]
   [functions.server]  # Define a serverless function named "server"
     path = "server.js"  # Provide the path to your serverless function JavaScript file
+
+[[redirects]]
+  from = "/get"
+  to = "/.netlify/functions/server/get"
+  status = 200
