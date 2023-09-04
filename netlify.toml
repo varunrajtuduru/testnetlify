@@ -2,4 +2,5 @@
   # No need to specify a functions directory if server.js is at the root
 
 [functions]
-  server = "server.js"
+  [functions.server]  # Define a serverless function named "server"
+    path = "server.js"  # Provide the path to your serverless function JavaScript file
