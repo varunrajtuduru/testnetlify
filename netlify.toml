@@ -1,2 +1,7 @@
 [build]
-command = "npm install"  # Adjust this command according to your project setup
+    functions="functions"
+
+[[redirects]]
+    to = "/.netlify/functions/api/:splat"
+    from="/*"
+    status=200
