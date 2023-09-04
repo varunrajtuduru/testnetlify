@@ -1,2 +1,5 @@
-[[functions]]
-  path = "server.js"
+[build]
+  # No need to specify a functions directory if server.js is at the root
+
+[functions]
+  server = "server.js"
